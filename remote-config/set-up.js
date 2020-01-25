@@ -1,8 +1,8 @@
-import { firebase } from './firebase';
+import { firebase } from '../firebase';
 
 const remoteConfig = firebase.remoteConfig();
 
-export default function activateRemoteConfig(settings, defaultConfig) {
+export default function setUpRemoteConfig(settings, defaultConfig) {
   remoteConfig.settings = settings;
   remoteConfig.defaultConfig = defaultConfig;
 

@@ -1,5 +1,5 @@
 import React, { useState, useEffect, createContext } from 'react';
-import activateRemoteConfig from './remote-config';
+import setUpRemoteConfig from './set-up';
 
 export const RemoteConfigContext = createContext({});
 
@@ -7,7 +7,7 @@ export default function RemoteConfigProvider({ settings, defaultConfig, children
   const [remoteConfigParameters, setRemoteConfigParameters] = useState(undefined);
 
   useEffect(() => {
-    Promise.resolve(activateRemoteConfig(settings, defaultConfig))
+    Promise.resolve(setUpRemoteConfig(settings, defaultConfig))
       .then(res => {
         setRemoteConfigParameters(res);
       })
