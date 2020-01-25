@@ -4,7 +4,7 @@ import { firebase } from './config';
 const remoteConfig = firebase.remoteConfig();
 const RemoteConfigContext = createContext({});
 
-function setUpRemoteConfig(settings, defaultConfig) {
+function setUpRemoteConfig(settings = {}, defaultConfig = {}) {
   remoteConfig.settings = settings;
   remoteConfig.defaultConfig = defaultConfig;
 
