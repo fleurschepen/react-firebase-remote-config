@@ -1,6 +1,6 @@
 # React Firebase Remote Config
 
-Firebase Remote Config for React implementation
+Firebase Remote Config for React
 
 ## Getting Started
 
