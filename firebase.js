@@ -2,7 +2,7 @@ import * as firebaseApp from 'firebase/app';
 import 'firebase/remote-config';
 
 const firebaseConfig = {
-	apiKey: "api-key",
+  apiKey: "api-key",
   authDomain: "project-id.firebaseapp.com",
   databaseURL: "https://project-id.firebaseio.com",
   projectId: "project-id",
