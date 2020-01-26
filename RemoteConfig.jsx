@@ -32,8 +32,8 @@ export function RemoteConfigProvider({ settings, defaultConfig, children }) {
 
   useEffect(() => {
     Promise.resolve(setUpRemoteConfig(settings, defaultConfig))
-      .then(res => {
-        setRemoteConfigParameters(res);
+      .then(parameters => {
+        setRemoteConfigParameters(parameters);
       })
       .catch(err => {
         console.log(err);
