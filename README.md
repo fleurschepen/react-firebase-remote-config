@@ -10,7 +10,7 @@ To help you set up Firebase Remote Config for React the same way I did, I've wri
 
 Install the Firebase SDK
 
-```
+```sh
 npm install --save firebase
 ```
 
@@ -50,7 +50,7 @@ npm install --save firebase
 - **Pass your Remote Config settings in the `settings` prop**
 - **Pass your default config parameters in the `defaultConfig` prop, eg:**
     
-    ```
+    ```jsx
     import React from 'react';
     import { RemoteConfigProvider } from './firebase/RemoteConfig';
     
@@ -78,7 +78,7 @@ npm install --save firebase
 
 - **Use the HOC `withRemoteConfig` and use your parameters from the passed down props, eg:**
 
-    ```
+    ```jsx
     import React from 'react';
     import { withRemoteConfig } from './firebase/RemoteConfig';
     
