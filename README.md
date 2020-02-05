@@ -43,7 +43,7 @@ npm install --save firebase
 
 ### Step 1
 
-> When you want to pass your Firebase Remote Config settings and the default parameters to use/fetch
+**When you want to pass your Firebase Remote Config settings and the default parameters to use/fetch**
 
 - Wrap your app the the RemoteConfigProvider component
 - Pass your Remote Config settings in the `settings` prop
@@ -73,7 +73,7 @@ npm install --save firebase
 
 ### Step 2
 
-> When you want to use your Firebase Remote Config parameters
+**When you want to use your Firebase Remote Config parameters**
 
 - Use the HOC `withRemoteConfig` and use your parameters from the passed down props, eg:
 
