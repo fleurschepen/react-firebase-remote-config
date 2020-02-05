@@ -20,17 +20,16 @@ npm install --save firebase
 
 ### Step 1
 
-- **Clone this repo**
+- Clone this repo
 
-- **Copy the `react-firebase-remote-config` folder and paste it in your React project**
+- Copy the `react-firebase-remote-config` folder and paste it in your React project
 
-    > (Optional) Rename the `react-firebase-remote-config` folder, I've named mine firebase
-
-    > (Optional) Delete the `README.md` file
+    > 1. (Optional) Rename the `react-firebase-remote-config` folder, I've named mine firebase
+    > 2. (Optional) Delete the `README.md` file
 
 ### Step 2
 
-- **Set up your Firebase config in the `firebaseConfig` variable in `config.js`**
+- Set up your Firebase config in the `firebaseConfig` variable in `config.js`
 
     > To find the config variables for your app:
     > 1. Go to the <a href="https://console.firebase.google.com" target="_blank">`Firebase console`</a> and click on your project
@@ -46,9 +45,9 @@ npm install --save firebase
 
 > When you want to pass your Firebase Remote Config settings and the default parameters to use/fetch
 
-- **Wrap your app the the RemoteConfigProvider component**
-- **Pass your Remote Config settings in the `settings` prop**
-- **Pass your default config parameters in the `defaultConfig` prop, eg:**
+- Wrap your app the the RemoteConfigProvider component
+- Pass your Remote Config settings in the `settings` prop
+- Pass your default config parameters in the `defaultConfig` prop, eg:
     
     ```jsx
     import React from 'react';
@@ -76,7 +75,7 @@ npm install --save firebase
 
 > When you want to use your Firebase Remote Config parameters
 
-- **Use the HOC `withRemoteConfig` and use your parameters from the passed down props, eg:**
+- Use the HOC `withRemoteConfig` and use your parameters from the passed down props, eg:
 
     ```jsx
     import React from 'react';
